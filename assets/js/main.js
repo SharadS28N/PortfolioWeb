@@ -57,20 +57,24 @@ sr.reveal('.home__social-icon',{ interval: 200});
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
 
 /*For the mode toggle*/
-const checkbox = document.getElementById("darkModeToggle");
-const ball = document.querySelector(".ball");
-
-checkbox.addEventListener("change", () => {
-  document.body.classList.toggle("light-mode");
-  document.querySelector('.nav').classList.toggle('light-mode');
+document.addEventListener("DOMContentLoaded", function () {
+    // Your JavaScript code here
+    const checkbox = document.getElementById("darkModeToggle");
+    const ball = document.querySelector(".ball");
   
-  // Toggle between moon and sun icons
-  if (checkbox.checked) {
-    ball.style.transform = "translateX(24px)";
-  } else {
-    ball.style.transform = "translateX(0)";
-  }
-});
+    checkbox.addEventListener("change", () => {
+      document.body.classList.toggle("light-mode");
+      document.querySelector('.nav').classList.toggle('light-mode');
+  
+      // Toggle between moon and sun icons
+      if (checkbox.checked) {
+        ball.style.transform = "translateX(24px)";
+      } else {
+        ball.style.transform = "translateX(0)";
+      }
+    });
+  });
+  
 
 /* For Github Repositories in Work Section */
 document.addEventListener("DOMContentLoaded", () => {
