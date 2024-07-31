@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 repoLink.href = repo.html_url;
                 repoLink.className = "work__img";
 
-                const repoImage = document.createElement("h5");
+                const repoImage = document.createElement("img");
                 repoImage.alt = repo.name;
 
                 repoLink.appendChild(repoImage);
