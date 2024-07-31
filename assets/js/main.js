@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 repoLink.className = "work__img";
 
                 const repoImage = document.createElement("img");
-                repoImage.src = "assets/img/default-work-image.jpg"; // Replace with your actual image source
+                repoImage.src = "https://images.shiksha.com/mediadata/shikshaOnline/mailers/2021/naukri-learning/oct/28oct/Project-Manager.jpg"; // Replace with your actual image source
                 repoImage.alt = repo.name;
 
                 repoLink.appendChild(repoImage);
