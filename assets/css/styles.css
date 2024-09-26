@@ -169,13 +169,24 @@ img {
 .nav {
   background-color: var(--background-color);
   color: var(--text-color);
-  /* ... other styles */
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: var(--font-semi);
 }
+
+.nav__logo {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center vertically */
+  color: var(--second-color);
+}
+
+.nav__logo img {
+  height: 30px; /* Set logo height */
+  margin-right: 8px; /* Space between logo and text */
+}
+
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
@@ -188,16 +199,20 @@ img {
     transition: 0.5s;
   }
 }
+
 .nav__item {
   margin-bottom: var(--mb-4);
 }
+
 .nav__link {
   position: relative;
   color: #fff;
 }
+
 .nav__link:hover {
   position: relative;
 }
+
 .nav__link:hover::after {
   position: absolute;
   content: "";
@@ -207,14 +222,13 @@ img {
   top: 2rem;
   background-color: var(--first-color);
 }
-.nav__logo {
-  color: var(--second-color);
-}
+
 .nav__toggle {
   color: var(--second-color);
   font-size: 1.5rem;
   cursor: pointer;
 }
+
 
 /*Active menu*/
 .active-link::after {
